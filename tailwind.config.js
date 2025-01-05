@@ -5,8 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        titlefont: ['EnergySpike-d9Bx6', 'sans-serif'],
+      },
       backgroundImage: {
-        'backgroundImage': "url('/assets/moviebg.jpg')",
+        'backgroundImage': "url('/assets/619306-bg-full-netflix-grid-v2.desktop.jpg')",
       },
     },
   },
