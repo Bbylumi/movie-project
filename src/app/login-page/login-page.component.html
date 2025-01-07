@@ -1,6 +1,128 @@
- <div class=" relative bg-backgroundImage bg-cover bg-center h-screen bg-opacity-70">
-    <div class=" absolute inset-0 bg-black bg-opacity-65"></div>        
-    <div class="relative z-10 text-white" >
-    <h4 class="font-titlefont">StreamVerse</h4>
+<div
+  class="relative bg-backgroundImage bg-cover bg-center h-screen bg-opacity-70"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+  <div class="relative z-10 text-white flex items-center gap-0 space-x-0">
+    <!-- Flex container and spacing -->
+    <img
+      class="w-24 h-24 rounded-full ml-20"
+      src="/assets/logo.png"
+      alt="Logo"
+    />
+    <h4
+      class="font-titlefont text-6xl text-red-600 font-bold md:text-5xl sm:text-4xl sm:p-20"
+    >
+      StreamVerse
+    </h4>
+  </div>
+
+  <div class="container mx-auto">
+    <div class="flex flex-wrap">
+      <div class="w-full sm:w-1/2 p-2">
+        <!-- Content for the first column -->
+        <div class="relative text-white text-7xl pl-8 font-textfont">
+          Welcome to StreamVerse .!
+        </div>
+      </div>
+      <div class="w-full sm:w-1/2 p-2">
+        <!-- Content for the second column -->
+        <div class="relative max-w-sm mx-auto card">
+          <h2 class="text-xl font-semibold text-white font-textfont2">Login</h2>
+          <p class="text-white text-xs font-textfont2">Glad you're back</p>
+          <form class="space-y-6">
+            <div>
+              <label
+                for="email"
+                class="block text-sm/6 font-medium mt-7 text-white"
+                >Email address</label
+              >
+              <div class="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="off"
+                  placeholder="Email-address"
+                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <label
+                  for="password"
+                  class="block text-sm/6 font-medium text-white"
+                  >Password</label
+                >
+                <div class="text-sm">
+                  <a
+                    href="#"
+                    class="font-semibold text-indigo-600 hover:text-indigo-500"
+                    >Forgot password?</a
+                  >
+                </div>
+              </div>
+              <div class="mt-2">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  autocomplete="off"
+                  required
+                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+                <div class="btn-group" role="group" data-bs-toggle="buttons">
+                  <label class="text-white mb-4 text-sm font-textfont2">
+                    <input
+                      type="checkbox"
+                      class="mt-4"
+                      name=""
+                      id=""
+                      checked
+                      autocomplete="off"
+                    />
+                    Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+          <p class="text-gray-300 mt-2">
+            This card uses advanced styles with Tailwind utilities.
+          </p>
+          <button
+            class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
     </div>
- </div>
+  </div>
+
+  <!-- <section class="mt-20 px-10">
+      <div class="relative text-white text-7xl pl-8 font-textfont">
+        Welcome to StreamVerse
+      </div>
+    </section>
+    <div class="relative max-w-sm mx-auto bg-white/5 shadow-lg backdrop-blur-sm rounded-lg p-4">
+      <h2 class="text-xl font-semibold text-white">Custom Card</h2>
+      <p class="text-gray-300 mt-2">
+        This card uses advanced styles with Tailwind utilities.
+      </p>
+      <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+        Learn More
+      </button>
+    </div>
+       -->
+</div>

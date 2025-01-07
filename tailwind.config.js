@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        titlefont: ['EnergySpike-d9Bx6', 'sans-serif'],
+        titlefont: ['Rubik Vinyl', 'sans-serif'],
+        textfont: ['Teko', 'sans-serif'],
+        textfont2: ['Noto Sans', 'sans-serif'],
       },
       backgroundImage: {
         'backgroundImage': "url('/assets/619306-bg-full-netflix-grid-v2.desktop.jpg')",

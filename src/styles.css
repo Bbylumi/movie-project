@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @font-face{
-    font-family: 'EnergySpike';
+    font-family: 'EnergySpike-d9Bx6';
     src: url('/font/EnergySpike-d9Bx6.ttf') format('truetype');
     font-weight: normal;
     font-size: normal;
