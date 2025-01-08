@@ -1,5 +1,5 @@
 <div
-  class="relative bg-backgroundImage bg-cover bg-center h-screen bg-opacity-70"
+  class="relative bg-backgroundImage bg-cover bg-center h-full bg-opacity-70"
 >
   <div class="absolute inset-0 bg-black bg-opacity-70"></div>
   <div class="relative z-10 text-white flex items-center gap-0 space-x-0">
@@ -20,13 +20,15 @@
     <div class="flex flex-wrap">
       <div class="w-full sm:w-1/2 p-2">
         <!-- Content for the first column -->
+        <marquee direction="">
         <div class="relative text-white text-7xl pl-8 font-textfont">
           Welcome to StreamVerse .!
         </div>
+      </marquee>      
       </div>
       <div class="w-full sm:w-1/2 p-2">
         <!-- Content for the second column -->
-        <div class="relative max-w-sm mx-auto card">
+        <div class="relative max-w-sm mx-auto card bottom-20">
           <h2 class="text-xl font-semibold text-white font-textfont2">Login</h2>
           <p class="text-white text-xs font-textfont2">Glad you're back</p>
           <form class="space-y-6">
@@ -43,7 +45,7 @@
                   id="email"
                   autocomplete="off"
                   placeholder="Email-address"
-                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 focus:bg-white sm:text-sm/6"
                 />
               </div>
             </div>
@@ -58,7 +60,7 @@
                 <div class="text-sm">
                   <a
                     href="#"
-                    class="font-semibold text-indigo-600 hover:text-indigo-500"
+                    class="font-semibold text-textcolor-0 hover:text-textcolorhover-0 transition-all duration-300"
                     >Forgot password?</a
                   >
                 </div>
@@ -69,8 +71,9 @@
                   name="password"
                   id="password"
                   autocomplete="off"
+                  placeholder="Password"
                   required
-                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:bg-white focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
                 <div class="btn-group" role="group" data-bs-toggle="buttons">
                   <label class="text-white mb-4 text-sm font-textfont2">
@@ -91,20 +94,38 @@
             <div>
               <button
                 type="submit"
-                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                class="flex w-full justify-center rounded-md bg-textcolor-0 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-signuphover-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Sign in
               </button>
             </div>
           </form>
-          <p class="text-gray-300 mt-2">
-            This card uses advanced styles with Tailwind utilities.
+          <p class="text-gray-300 mt-5">
+            <img src="assets/Or.svg" />
           </p>
-          <button
-            class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-          >
-            Learn More
-          </button>
+          <div>
+           <img class="w-20 h-20" src="assets/apple.png" alt="">
+           <img class="w-20 h-20" src="assets/google.png">
+          </div>
+          <p class="text-white text-center mt-5">
+            Don't have an account?
+            <a href="#"><span class="text-signup-0 font-bold">Sign up</span></a>
+          </p>
+          <div class="container mt-7 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3 items-center text-center gap-1">
+              <div>
+                <!-- Content for the first column -->
+                <p class="text-gray-400 text-sm ">Term and conditions</p> 
+              </div>
+              <div>
+                <!-- Content for the second column -->
+                <p class="text-gray-400 text-sm">Support</p>
+              </div>
+              <div class="text-gray-400 text-sm">
+                Contact Us
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
