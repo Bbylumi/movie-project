@@ -9,3 +9,6 @@
     font-weight: normal;
     font-size: normal;
 }
+body{
+    overflow: hidden;
+}

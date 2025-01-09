@@ -1,149 +1,93 @@
-<div
-  class="relative bg-backgroundImage bg-cover bg-center h-full bg-opacity-70"
->
-  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
-  <div class="relative z-10 text-white flex items-center gap-0 space-x-0">
-    <!-- Flex container and spacing -->
-    <img
-      class="w-24 h-24 rounded-full ml-20"
-      src="/assets/logo.png"
-      alt="Logo"
-    />
-    <h4
-      class="font-titlefont text-6xl text-red-600 font-bold md:text-5xl sm:text-4xl sm:p-20"
-    >
-      StreamVerse
-    </h4>
-  </div>
+<div class="relative bg-backgroundImage bg-cover bg-center min-h-screen overflow-auto bg-opacity-70">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black  bg-opacity-70"></div>
 
-  <div class="container mx-auto">
-    <div class="flex flex-wrap">
-      <div class="w-full sm:w-1/2 p-2">
-        <!-- Content for the first column -->
-        <marquee direction="">
-        <div class="relative text-white text-7xl pl-8 font-textfont">
-          Welcome to StreamVerse .!
-        </div>
-      </marquee>      
+  <!-- Content -->
+  <div class="relative z-10 container gap-20 h-screen overflow-auto  mx-auto flex flex-col md:flex-row items-center md:items-start">
+    <!-- Left Side -->
+    <div class="w-full md:w-1/2 flex flex-col items-center md:items-start gap-8 p-6 md:pl-10 text-white">
+      <!-- Logo and Title -->
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <img
+          class="w-20 h-20 md:w-24 md:h-24 rounded-full"
+          src="/assets/logo.png"
+          alt="Logo"
+        />
+        <h4 class="text-4xl md:text-6xl font-titlefont text-red-600 font-bold">
+          StreamVerse
+        </h4>
       </div>
-      <div class="w-full sm:w-1/2 p-2">
-        <!-- Content for the second column -->
-        <div class="relative max-w-sm mx-auto card bottom-20">
-          <h2 class="text-xl font-semibold text-white font-textfont2">Login</h2>
-          <p class="text-white text-xs font-textfont2">Glad you're back</p>
-          <form class="space-y-6">
-            <div>
-              <label
-                for="email"
-                class="block text-sm/6 font-medium mt-7 text-white"
-                >Email address</label
-              >
-              <div class="mt-2">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  autocomplete="off"
-                  placeholder="Email-address"
-                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 focus:bg-white sm:text-sm/6"
-                />
-              </div>
-            </div>
 
-            <div>
-              <div class="flex items-center justify-between">
-                <label
-                  for="password"
-                  class="block text-sm/6 font-medium text-white"
-                  >Password</label
-                >
-                <div class="text-sm">
-                  <a
-                    href="#"
-                    class="font-semibold text-textcolor-0 hover:text-textcolorhover-0 transition-all duration-300"
-                    >Forgot password?</a
-                  >
-                </div>
-              </div>
-              <div class="mt-2">
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  autocomplete="off"
-                  placeholder="Password"
-                  required
-                  class="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:bg-white focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                />
-                <div class="btn-group" role="group" data-bs-toggle="buttons">
-                  <label class="text-white mb-4 text-sm font-textfont2">
-                    <input
-                      type="checkbox"
-                      class="mt-4"
-                      name=""
-                      id=""
-                      checked
-                      autocomplete="off"
-                    />
-                    Remember me
-                  </label>
-                </div>
-              </div>
-            </div>
+      <!-- Welcome Text -->
+      <div class="text-center  md:text-left">
+        <marquee class="text-3xl md:text-7xl font-textfont">Welcome to StreamVerse .!</marquee>
+        <div class="mt-4 text-lg md:text-xl">
+          <span id="dynamic-text"></span><span class="cursor">|</span>
+        </div>
+      </div>
+    </div>
 
-            <div>
-              <button
-                type="submit"
-                class="flex w-full justify-center rounded-md bg-textcolor-0 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-signuphover-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Sign in
-              </button>
-            </div>
-          </form>
-          <p class="text-gray-300 mt-5">
-            <img src="assets/Or.svg" />
-          </p>
+    <!-- Right Side -->
+    <div class="w-full md:w-1/2 p-6">
+      <!-- Login Form -->
+      <div class="relative max-w-md mx-auto card bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-white mb-2 font-textfont2">Login</h2>
+        <p class="text-gray-300 mb-4 font-textfont2">Glad you're back</p>
+        <form class="space-y-6">
+          <!-- Email Input -->
           <div>
-           <img class="w-20 h-20" src="assets/apple.png" alt="">
-           <img class="w-20 h-20" src="assets/google.png">
+            <label for="email" class="block text-sm font-medium text-white">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="off"
+              placeholder="Email-address"
+              class="block w-full rounded-md bg-transparent px-3 py-2 text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:bg-white focus:outline-indigo-600"
+            />
           </div>
-          <p class="text-white text-center mt-5">
-            Don't have an account?
-            <a href="#"><span class="text-signup-0 font-bold">Sign up</span></a>
-          </p>
-          <div class="container mt-7 mx-auto">
-            <div class="grid grid-cols-1 sm:grid-cols-3 items-center text-center gap-1">
-              <div>
-                <!-- Content for the first column -->
-                <p class="text-gray-400 text-sm ">Term and conditions</p> 
-              </div>
-              <div>
-                <!-- Content for the second column -->
-                <p class="text-gray-400 text-sm">Support</p>
-              </div>
-              <div class="text-gray-400 text-sm">
-                Contact Us
-              </div>
-            </div>
+
+          <!-- Password Input -->
+          <div>
+            <label for="password" class="block text-sm font-medium text-white">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="off"
+              placeholder="Password"
+              class="block w-full rounded-md bg-transparent px-3 py-2 text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:bg-white focus:outline-indigo-600"
+            />
           </div>
+
+          <!-- Remember Me and Sign In -->
+          <div class="flex items-center justify-between">
+            <label class="flex items-center text-sm text-white">
+              <input type="checkbox" class="mr-2" /> Remember me
+            </label>
+            <a href="#" class="text-sm text-textcolor-0 hover:text-textcolorhover-0">Forgot password?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full rounded-md bg-textcolor-0 px-3 py-2 text-white text-sm font-bold hover:bg-signuphover-0"
+          >
+            Sign in
+          </button>
+        </form>
+
+        <!-- Alternative Login -->
+        <div class="flex items-center justify-center mt-4">
+          <img class="w-10 h-10 md:w-12 md:h-12 mx-2 hover:scale-105 transition-transform" src="assets/apple.png" alt="Apple" />
+          <img class="w-10 h-10 md:w-12 md:h-12 mx-2 hover:scale-105 transition-transform" src="assets/google.png" alt="Google" />
+          <img class="w-10 h-10 md:w-12 md:h-12 mx-2 hover:scale-105 transition-transform" src="assets/x logo.png" alt="X" />
         </div>
+
+        <!-- Sign Up Link -->
+        <p class="text-center text-white mt-6">
+          Don't have an account? <a href="#" class="text-signup-0 font-bold">Sign up</a>
+        </p>
       </div>
     </div>
   </div>
-
-  <!-- <section class="mt-20 px-10">
-      <div class="relative text-white text-7xl pl-8 font-textfont">
-        Welcome to StreamVerse
-      </div>
-    </section>
-    <div class="relative max-w-sm mx-auto bg-white/5 shadow-lg backdrop-blur-sm rounded-lg p-4">
-      <h2 class="text-xl font-semibold text-white">Custom Card</h2>
-      <p class="text-gray-300 mt-2">
-        This card uses advanced styles with Tailwind utilities.
-      </p>
-      <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-        Learn More
-      </button>
-    </div>
-       -->
 </div>
