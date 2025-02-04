@@ -9,6 +9,7 @@ module.exports = {
         titlefont: ['Rubik Vinyl', 'sans-serif'],
         textfont: ['Teko', 'sans-serif'],
         textfont2: ['Noto Sans', 'sans-serif'],
+        bebas: ['Bebas Neue', 'sans-serif'],
     
       },
       colors: {
