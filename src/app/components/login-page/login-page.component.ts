@@ -2,7 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-login-page',
-  standalone: true,
+  standalone: true, 
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css']
 })
