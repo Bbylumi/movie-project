@@ -22,65 +22,119 @@
         Sign In
       </button>
     </div>
-    <div class="space-y-5 mt-52">
-      <p
-        class="text-white font-bold text-3xl md:text-5xl text-center flex flex-col items-center"
-      >
-        Endless streaming, zero limits.<br /><span
-          class="text-[#FFD700] text-[20px] ml-3 text-center md:text-[25px] font-[700] mt-5"
-        >
+    <div class="space-y-5 mt-20 md:mt-52 px-4 min-h-[52vh]">
+      <!-- Main Headline -->
+      <p class="text-white font-bold text-3xl md:text-5xl text-center">
+        Endless streaming, zero limits.<br />
+        <span class="text-[#FFD700] text-xl md:text-[25px] font-bold mt-5 inline-block">
           Movies and TV shows
         </span>
       </p>
-      <p
-        class="text-white font-semibold text-center text-[21px] md:text-3xl flex flex-col items-center"
-      >
+    
+      <!-- Subheadline -->
+      <p class="text-white font-semibold text-center text-lg md:text-3xl">
         Watch anytime, Cancel whenever you want.
       </p>
-      <p
-        class="text-white md:text-lg text-[15px] text-center flex flex-col items-center"
-      >
+    
+      <!-- Call-to-action copy -->
+      <p class="text-white text-sm md:text-lg text-center">
         Ready to watch? Enter your email to create or restart your membership.
       </p>
-      <div class="flex flex-row items-center justify-center">
-        <form class="my-8">
-          <div class="relative mb-2 mr-28">
+    
+      <!-- Email Input Form -->
+      <div class="flex justify-center">
+        <form class="my-8 w-full max-w-sm">
+          <div class="relative mb-2">
+            <!-- Input with floating label using peer -->
             <input
+              type="email"
               id="email"
-              class="md:w-[150%] rounded px-3 border bg-transparent border-gray-300 pt-5 pb-2 focus:border-blue-700 focus:ring-1 focus:ring-blue-700 focus:outline-none input active:outline-none"
-              type="text"
+              placeholder=" "
+              class="peer block w-full rounded px-3 py-2 bg-transparent border border-gray-300 focus:border-blue-700 focus:ring-1 focus:ring-blue-700 focus:outline-none"
               autofocus
             />
             <label
               for="email"
-              class="label absolute mt-2 ml-3 leading-tighter text-white text-base cursor-text"
-              >Email Address</label
+              class="absolute left-3 top-2 text-gray-300 transition-all duration-200 
+                     peer-placeholder-shown:top-2 peer-placeholder-shown:text-base 
+                     peer-focus:-top-3 peer-focus:text-sm peer-focus:text-blue-700"
             >
+              Email Address
+            </label>
           </div>
         </form>
       </div>
     </div>
-  <hr/>
-  <div class="min-h-screen bg-black p-5 flex flex-col md:flex-row items-center justify-center gap-8">
-    <!-- Text Content -->
-    <div class="space-y-5 md:w-1/2">
-      <p class="text-white font-bold text-3xl sm:text-4xl md:text-5xl">
-        Enjoy on your TV.
-      </p>
-      <p class="text-white font-semibold text-lg sm:text-xl md:text-2xl">
-        Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
-      </p>
+    
+    <hr />
+    <div
+      class="min-h-[84vh] bg-black p-5 flex flex-col md:flex-row items-center justify-center gap-8"
+    >
+      <!-- Text Content -->
+      <div class="space-y-5 md:w-1/2">
+        <p class="text-white font-bold text-3xl sm:text-4xl md:text-5xl">
+          Enjoy on your TV.
+        </p>
+        <p class="text-white font-semibold text-lg sm:text-xl md:text-2xl">
+          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+          players and more.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="md:w-1/2 flex justify-center">
+        <img
+          alt="TV"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+          class="w-full max-w-md"
+        />
+      </div>
     </div>
-  
-    <!-- Image -->
-    <div class="md:w-1/2 flex justify-center">
-      <img
-        alt="TV"
-        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-        class="w-full max-w-md"
-      />
+
+    <hr />
+    <div
+      class="min-h-[84vh] bg-black p-5 flex flex-col md:flex-row items-center justify-center gap-8"
+    >
+      <div class="space-y-5 md:w-1/2">
+        <p class="text-white font-bold text-3xl sm:text-4xl md:text-5xl">
+          Watch everywhere.
+        </p>
+        <p class="text-white font-semiboldbold text-lg sm:text-xl md:text-2xl">
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img
+          alt=""
+          class="w-full max-w-md"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+          data-uia="our-story-card-img"
+        />
+      </div>
     </div>
-  </div>
-  
+    <hr />
+    <div class="min-h-screen bg-black p-5 flex flex-col md:flex-row items-center justify-center gap-8">
+      <!-- Image Container with background -->
+      <div class="md:w-1/2 flex justify-center">
+        <div class="p-4 rounded-md">
+          <img src="/assets/premier.jpg" alt="Premier" class="w-full h-auto object-contain" />
+        </div>
+      </div>
+      
+      <!-- Text Content -->
+      <div class="md:w-1/2 flex flex-col justify-center">
+        <p class="text-white font-bold text-3xl sm:text-4xl md:text-5xl">
+          The Premier League
+        </p>
+        <p class="text-white font-bold text-3xl sm:text-4xl md:text-5xl">
+          in your pocket
+        </p>
+        <p class="text-white font-semiboldbold text-lg sm:text-xl md:text-2xl">
+          Stream all 380 Premier League live on mobile plus watch highlights, interviews, magazine shows and more.
+        </p>
+      </div>
+    </div>
+    
   </div>
 </div>
